@@ -96,7 +96,31 @@ header p{
 
 }
 
+/* =====================================================
+   BADGE
+===================================================== */
 
+.badge{
+
+    display:inline-block;
+
+    background:rgba(123,47,247,.15);
+
+    color:#B88CFF;
+
+    padding:10px 18px;
+
+    border:1px solid rgba(123,47,247,.4);
+
+    border-radius:30px;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+}
 /* =====================================================
    BOTONES
 ===================================================== */

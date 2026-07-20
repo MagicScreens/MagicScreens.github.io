@@ -1,21 +1,49 @@
-/* ===== CONFIGURACIÓN GENERAL ===== */
+/* =====================================================
+   MAGIC SCREENS
+   Hoja de estilos principal
+===================================================== */
+
+
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+===================================================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
+
 body{
     background:#0B0B14;
     color:white;
     font-family:Arial, Helvetica, sans-serif;
     line-height:1.6;
 }
-/* ===== HEADER ===== */
+
+
+/* =====================================================
+   CONTENEDOR
+===================================================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
 header{
     text-align:center;
-    padding:80px 20px;
+    padding:100px 20px;
+    background:linear-gradient(180deg,#111122,#0B0B14);
 }
-h1{
+
+header h1{
     font-size:60px;
     margin-bottom:15px;
 }
@@ -25,19 +53,82 @@ header p{
     color:#CFCFCF;
     margin-bottom:35px;
 }
+
+
+/* =====================================================
+   BOTÓN WHATSAPP
+===================================================== */
+
 .btn-whatsapp{
+
     display:inline-block;
+
     background:#7B2FF7;
+
     color:white;
+
     text-decoration:none;
+
     padding:15px 35px;
+
     border-radius:40px;
+
     font-size:18px;
+
     font-weight:bold;
-    transition:0.3s;
+
+    transition:.3s;
+
 }
 
 .btn-whatsapp:hover{
+
     background:#9A4DFF;
+
     transform:scale(1.05);
+
+}
+
+
+/* =====================================================
+   SERVICIOS
+===================================================== */
+
+/* Próximamente */
+
+
+/* =====================================================
+   TARJETAS
+===================================================== */
+
+/* Próximamente */
+
+
+/* =====================================================
+   BENEFICIOS
+===================================================== */
+
+/* Próximamente */
+
+
+/* =====================================================
+   PREGUNTAS FRECUENTES
+===================================================== */
+
+/* Próximamente */
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+/* Próximamente */
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
 }

@@ -154,6 +154,13 @@ header p{
     transform:translateY(-3px);
 
 }
+.btn-whatsapp{
+
+    font-size:18px;
+
+    padding:16px 40px;
+
+}
 .card .btn-card{
 
     display:block;
@@ -163,7 +170,69 @@ header p{
     text-align:center;
 
 }
+/* =====================================================
+   ESTADÍSTICAS
+===================================================== */
 
+.estadisticas{
+
+    padding:50px 20px;
+
+}
+
+.estadisticas-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.estadistica{
+
+    width:260px;
+
+    background:var(--fondo-secundario);
+
+    border:1px solid #2B2B40;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.estadistica:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--morado);
+
+}
+
+.estadistica h2{
+
+    font-size:42px;
+
+    color:var(--morado);
+
+    margin-bottom:10px;
+
+}
+
+.estadistica p{
+
+    color:var(--texto-secundario);
+
+}
 /* =====================================================
    SERVICIOS
 ===================================================== */

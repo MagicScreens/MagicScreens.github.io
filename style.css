@@ -210,7 +210,55 @@ header p{
 
 .card p{
 
+.logo-plataforma{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+.card label{
+
+    display:block;
+
+    text-align:left;
+
+    margin-bottom:8px;
+
     color:var(--texto-secundario);
+
+    font-weight:bold;
+
+}
+
+.card select{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#242438;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+.precio{
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    color:var(--morado);
 
     margin-bottom:25px;
 

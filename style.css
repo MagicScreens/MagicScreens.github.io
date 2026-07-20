@@ -264,7 +264,65 @@ header p{
 
 }
 
+/* =====================================================
+   BENEFICIOS
+===================================================== */
 
+.beneficios{
+
+    padding:90px 20px;
+
+}
+
+.beneficios h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:60px;
+
+}
+
+.beneficios-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.beneficio{
+
+    background:var(--fondo-secundario);
+
+    width:300px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid #2B2B40;
+
+    text-align:center;
+
+}
+
+.beneficio h3{
+
+    margin-bottom:15px;
+
+}
+
+.beneficio p{
+
+    color:var(--texto-secundario);
+
+}
 /* =====================================================
    FOOTER
 ===================================================== */

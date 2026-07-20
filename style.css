@@ -304,7 +304,11 @@ padding:35px;
     border:1px solid #2B2B40;
 
     transition:.3s;
+display:flex;
 
+flex-direction:column;
+
+justify-content:space-between;
 }
 
 .card:hover{

@@ -335,9 +335,11 @@ justify-content:space-between;
 }
 .card h3{
 
-    font-size:28px;
+    font-size:30px;
 
-    margin-bottom:15px;
+    font-weight:700;
+
+    margin-bottom:12px;
 
 }
 
@@ -388,19 +390,25 @@ justify-content:space-between;
 
     border:none;
 
-    border-top:1px solid #2B2B40;
+    border-top:1px solid #2F2F45;
 
-    margin:25px 0;
+    margin:30px 0;
 
 }
 
 .titulo-precio{
 
-    text-align:left;
+    text-align:center;
 
-    color:var(--texto-secundario);
+    color:#9E9EAE;
 
-    margin-bottom:10px;
+    font-size:14px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:8px;
 
 }
 
@@ -560,7 +568,35 @@ justify-content:space-between;
         font-size:42px;
 
     }
+/* =====================================================
+   ANIMACIONES
+===================================================== */
 
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.card{
+
+    animation:aparecer .6s ease;
+
+}
     header p{
 
         font-size:18px;

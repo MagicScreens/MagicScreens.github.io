@@ -433,7 +433,25 @@ padding:35px;
     margin-bottom:25px;
 
 }
+.badge-card{
 
+    display:inline-block;
+
+    background:rgba(123,47,247,.15);
+
+    color:#C89CFF;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+}
 /* =====================================================
    BENEFICIOS
 ===================================================== */

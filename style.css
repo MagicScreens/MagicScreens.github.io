@@ -440,13 +440,15 @@ padding:35px;
 
 .precio{
 
-    font-size:32px;
+    font-size:42px;
 
-    font-weight:bold;
+    font-weight:800;
 
     color:var(--morado);
 
-    margin-bottom:25px;
+    margin:10px 0 25px;
+
+    letter-spacing:1px;
 
 }
 .badge-card{

@@ -88,14 +88,25 @@ header p{
     transform:scale(1.05);
 
 }
-
-
 /* =====================================================
    SERVICIOS
 ===================================================== */
 
-/* Próximamente */
+.servicios{
 
+    padding:90px 20px;
+
+}
+
+.servicios h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:60px;
+
+}
 
 /* =====================================================
    TARJETAS

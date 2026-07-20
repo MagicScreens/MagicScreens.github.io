@@ -240,9 +240,11 @@ padding:35px;
 
 .card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 
     border-color:var(--morado);
+
+    box-shadow:0 20px 45px rgba(123,47,247,.25);
 
 }
 
@@ -264,9 +266,37 @@ padding:35px;
 
 .logo-plataforma{
 
-    font-size:60px;
+    display:flex;
 
-    margin-bottom:20px;
+    justify-content:center;
+
+    margin-bottom:25px;
+
+}
+
+.circulo-logo{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,var(--morado),#5F18D6);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    font-weight:bold;
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(123,47,247,.35);
 
 }
    .card hr{

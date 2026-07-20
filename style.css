@@ -315,11 +315,16 @@ justify-content:space-between;
 
 .card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-12px);
 
     border-color:var(--morado);
 
-    box-shadow:0 20px 45px rgba(123,47,247,.25);
+    box-shadow:0 25px 55px rgba(123,47,247,.30);
+
+}
+.card:hover .circulo-logo{
+
+    transform:scale(1.08) rotate(8deg);
 
 }
 .card select:hover{
@@ -386,7 +391,9 @@ justify-content:space-between;
     color:white;
 
     box-shadow:0 10px 25px rgba(123,47,247,.35);
+transition:.3s;
 
+cursor:pointer;
 }
    .card hr{
 

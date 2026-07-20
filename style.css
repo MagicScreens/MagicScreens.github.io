@@ -316,7 +316,19 @@ padding:35px;
     box-shadow:0 20px 45px rgba(123,47,247,.25);
 
 }
+.card select:hover{
 
+    border-color:var(--morado);
+
+}
+
+.card select:focus{
+
+    outline:none;
+
+    border-color:var(--morado);
+
+}
 .card h3{
 
     font-size:28px;
@@ -406,19 +418,23 @@ padding:35px;
 
     width:100%;
 
-    padding:12px;
+    padding:14px;
 
     margin-bottom:25px;
 
-    border:none;
+    border:1px solid #31314A;
 
-    border-radius:10px;
+    border-radius:12px;
 
-    background:#242438;
+    background:#202031;
 
     color:white;
 
     font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
 
 }
 

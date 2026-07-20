@@ -208,3 +208,44 @@ header p{
 @media(max-width:768px){
 
 }
+.servicios{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#171722;
+    width:300px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.3s;
+    border:1px solid #2b2b40;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#7B2FF7;
+}
+
+.card h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#CFCFCF;
+    margin-bottom:25px;
+}
+
+.card a{
+    display:inline-block;
+    background:#7B2FF7;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+}

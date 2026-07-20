@@ -1,7 +1,25 @@
 /* =====================================================
    MAGIC SCREENS
-   Hoja de estilos principal
+   Hoja de estilos principal - V1
 ===================================================== */
+
+
+/* =====================================================
+   COLORES OFICIALES
+===================================================== */
+
+:root{
+
+    --fondo:#0B0B14;
+    --fondo-secundario:#171722;
+
+    --morado:#7B2FF7;
+    --morado-hover:#9A4DFF;
+
+    --texto:#FFFFFF;
+    --texto-secundario:#CFCFCF;
+
+}
 
 
 /* =====================================================
@@ -14,11 +32,20 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    background:#0B0B14;
-    color:white;
+
+    background:var(--fondo);
+
+    color:var(--texto);
+
     font-family:Arial, Helvetica, sans-serif;
+
     line-height:1.6;
+
 }
 
 
@@ -27,9 +54,13 @@ body{
 ===================================================== */
 
 .container{
+
     width:90%;
+
     max-width:1200px;
+
     margin:auto;
+
 }
 
 
@@ -38,63 +69,52 @@ body{
 ===================================================== */
 
 header{
+
     text-align:center;
+
     padding:100px 20px;
+
     background:linear-gradient(180deg,#111122,#0B0B14);
+
 }
 
 header h1{
+
     font-size:60px;
+
     margin-bottom:15px;
+
 }
 
 header p{
+
     font-size:22px;
-    color:#CFCFCF;
+
+    color:var(--texto-secundario);
+
     margin-bottom:35px;
+
 }
 
 
 /* =====================================================
-   BOTÓN WHATSAPP
+   BOTONES
 ===================================================== */
 
-.btn-whatsapp{
-
-    display:inline-block;
-
-    background:#7B2FF7;
-
-    color:white;
-
-    text-decoration:none;
-
-    padding:15px 35px;
-
-    border-radius:40px;
-
-    font-size:18px;
-
-    font-weight:bold;
-
-    transition:.3s;
-
-}
-
-.btn-whatsapp:hover{
+.btn-whatsapp,
 .btn-card{
 
     display:inline-block;
 
-    background:#7B2FF7;
+    background:var(--morado);
 
     color:white;
 
     text-decoration:none;
 
-    padding:12px 30px;
+    padding:14px 30px;
 
-    border-radius:30px;
+    border-radius:35px;
 
     font-weight:bold;
 
@@ -102,16 +122,16 @@ header p{
 
 }
 
+.btn-whatsapp:hover,
 .btn-card:hover{
 
-    background:#9A4DFF;
+    background:var(--morado-hover);
+
+    transform:translateY(-3px);
 
 }
-    background:#9A4DFF;
 
-    transform:scale(1.05);
 
-}
 /* =====================================================
    SERVICIOS
 ===================================================== */
@@ -132,28 +152,41 @@ header p{
 
 }
 
+
 /* =====================================================
-   TARJETAS
+   CONTENEDOR DE TARJETAS
 ===================================================== */
+
 .cards{
 
     display:flex;
 
     justify-content:center;
 
+    flex-wrap:wrap;
+
+    gap:30px;
+
 }
+
+
+/* =====================================================
+   TARJETAS
+===================================================== */
 
 .card{
 
-    background:#151523;
+    background:var(--fondo-secundario);
 
-    width:320px;
+    width:300px;
 
-    padding:35px;
+    padding:30px;
 
     border-radius:20px;
 
     text-align:center;
+
+    border:1px solid #2B2B40;
 
     transition:.3s;
 
@@ -162,6 +195,8 @@ header p{
 .card:hover{
 
     transform:translateY(-8px);
+
+    border-color:var(--morado);
 
 }
 
@@ -175,23 +210,11 @@ header p{
 
 .card p{
 
-    color:#BEBEBE;
+    color:var(--texto-secundario);
 
     margin-bottom:25px;
 
 }
-/* =====================================================
-   BENEFICIOS
-===================================================== */
-
-/* Próximamente */
-
-
-/* =====================================================
-   PREGUNTAS FRECUENTES
-===================================================== */
-
-/* Próximamente */
 
 
 /* =====================================================
@@ -207,45 +230,22 @@ header p{
 
 @media(max-width:768px){
 
-}
-.servicios{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-}
+    header h1{
 
-.card{
-    background:#171722;
-    width:300px;
-    padding:30px;
-    border-radius:20px;
-    text-align:center;
-    transition:0.3s;
-    border:1px solid #2b2b40;
-}
+        font-size:42px;
 
-.card:hover{
-    transform:translateY(-8px);
-    border-color:#7B2FF7;
-}
+    }
 
-.card h3{
-    font-size:28px;
-    margin-bottom:15px;
-}
+    header p{
 
-.card p{
-    color:#CFCFCF;
-    margin-bottom:25px;
-}
+        font-size:18px;
 
-.card a{
-    display:inline-block;
-    background:#7B2FF7;
-    color:white;
-    text-decoration:none;
-    padding:12px 25px;
-    border-radius:30px;
-    font-weight:bold;
+    }
+
+    .servicios h2{
+
+        font-size:34px;
+
+    }
+
 }

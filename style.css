@@ -217,6 +217,25 @@ header p{
     margin-bottom:20px;
 
 }
+   .card hr{
+
+    border:none;
+
+    border-top:1px solid #2B2B40;
+
+    margin:25px 0;
+
+}
+
+.titulo-precio{
+
+    text-align:left;
+
+    color:var(--texto-secundario);
+
+    margin-bottom:10px;
+
+}
 
 .card label{
 

@@ -151,7 +151,7 @@ header p{
 
     background:var(--morado-hover);
 
-    transform:translateY(-3px);
+    transform:translateY(-3px) scale(1.02);
 
 }
 .btn-whatsapp{
@@ -168,6 +168,8 @@ header p{
     width:100%;
 
     text-align:center;
+
+    margin-top:10px;
 
 }
 /* =====================================================

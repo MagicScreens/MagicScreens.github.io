@@ -25,33 +25,19 @@ header p{
     color:#CFCFCF;
     margin-bottom:35px;
 }
-
 .btn-whatsapp{
-
     display:inline-block;
-
     background:#7B2FF7;
-
     color:white;
-
     text-decoration:none;
-
     padding:15px 35px;
-
     border-radius:40px;
-
     font-size:18px;
-
     font-weight:bold;
-
     transition:0.3s;
-
 }
 
 .btn-whatsapp:hover{
-
     background:#9A4DFF;
-
     transform:scale(1.05);
-
 }

@@ -82,7 +82,31 @@ header p{
 }
 
 .btn-whatsapp:hover{
+.btn-card{
 
+    display:inline-block;
+
+    background:#7B2FF7;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 30px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn-card:hover{
+
+    background:#9A4DFF;
+
+}
     background:#9A4DFF;
 
     transform:scale(1.05);
@@ -111,10 +135,51 @@ header p{
 /* =====================================================
    TARJETAS
 ===================================================== */
+.cards{
 
-/* Próximamente */
+    display:flex;
 
+    justify-content:center;
 
+}
+
+.card{
+
+    background:#151523;
+
+    width:320px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card h3{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#BEBEBE;
+
+    margin-bottom:25px;
+
+}
 /* =====================================================
    BENEFICIOS
 ===================================================== */

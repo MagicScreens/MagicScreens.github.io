@@ -210,6 +210,12 @@ header p{
 
 .card p{
 
+    color:var(--texto-secundario);
+
+    margin-bottom:20px;
+
+}
+
 .logo-plataforma{
 
     font-size:60px;

@@ -48,15 +48,15 @@ tipoDisney.addEventListener("change", function(){
 
     }
 
-    else if(tipoDisney.value=="Cuenta Estándar"){
+    else if(tipoDisney.value=="Cuenta Estándar +"){
 
-        precioDisney.textContent="$27.900";
+        precioDisney.textContent="$13.900";
 
     }
 
     else if(tipoDisney.value=="Pantalla Premium +"){
 
-        precioDisney.textContent="$7.500";
+        precioDisney.textContent="$10.000";
 
     }
 

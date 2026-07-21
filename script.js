@@ -20,7 +20,7 @@ if(tipoNetflix.value=="Pantalla"){
 
 else if(tipoNetflix.value=="Cuenta Completa"){
 
-   precioNetflix.textContent="HOLA";
+   precioNetflix.textContent="$49.900";
 
 }
 

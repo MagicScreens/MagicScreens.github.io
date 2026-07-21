@@ -32,5 +32,39 @@ tipoNetflix.addEventListener("change", function () {
         precioNetflix.textContent = "$15.000";
 
     }
+// ================================
+// DISNEY+
+// ================================
 
+const tipoDisney = document.getElementById("tipo-disney");
+
+const precioDisney = document.getElementById("precio-disney");
+
+tipoDisney.addEventListener("change", function(){
+
+    if(tipoDisney.value=="Cuenta Premium +"){
+
+        precioDisney.textContent="$37.900";
+
+    }
+
+    else if(tipoDisney.value=="Pantalla Premium +"){
+
+        precioDisney.textContent="$7.500";
+
+    }
+
+    else if(tipoDisney.value=="Cuenta Estándar"){
+
+        precioDisney.textContent="$27.900";
+
+    }
+
+    else if(tipoDisney.value=="Pantalla Estándar +"){
+
+        precioDisney.textContent="$6.500";
+
+    }
+
+});
 });

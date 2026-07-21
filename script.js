@@ -42,13 +42,7 @@ const precioDisney = document.getElementById("precio-disney");
 
 tipoDisney.addEventListener("change", function(){
 
-    if(tipoDisney.value=="Cuenta Premium +"){
-
-        precioDisney.textContent="$37.900";
-
-    }
-
-    else if(tipoDisney.value=="Pantalla Premium +"){
+    if(tipoDisney.value=="Pantalla Estándar +"){
 
         precioDisney.textContent="$7.500";
 
@@ -60,11 +54,16 @@ tipoDisney.addEventListener("change", function(){
 
     }
 
-    else if(tipoDisney.value=="Pantalla Estándar +"){
+    else if(tipoDisney.value=="Pantalla Premium +"){
 
-        precioDisney.textContent="$6.500";
+        precioDisney.textContent="$7.500";
 
     }
 
-});
+    else if(tipoDisney.value=="Cuenta Premium +"){
+
+        precioDisney.textContent="$37.900";
+
+    }
+
 });

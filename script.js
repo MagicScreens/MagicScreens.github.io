@@ -31,7 +31,9 @@ tipoNetflix.addEventListener("change", function () {
 
         precioNetflix.textContent = "$15.000";
 
-    }
+ }
+});
+
 // ================================
 // DISNEY+
 // ================================

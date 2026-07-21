@@ -4,3 +4,29 @@
 // ================================
 
 console.log("Magic Screens cargado correctamente");
+// ================================
+// NETFLIX
+// ================================
+
+const tipoNetflix = document.getElementById("tipo-netflix");
+
+const precioNetflix = document.getElementById("precio-netflix");
+tipoNetflix.addEventListener("change", function(){
+if(tipoNetflix.value=="Pantalla"){
+
+    precioNetflix.textContent="$13.000";
+
+}
+
+else if(tipoNetflix.value=="Cuenta"){
+
+    precioNetflix.textContent="$44.900";
+
+}
+
+else{
+
+    precioNetflix.textContent="$15.900";
+
+}
+});

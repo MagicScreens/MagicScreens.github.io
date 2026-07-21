@@ -18,7 +18,7 @@ if(tipoNetflix.value=="Pantalla"){
 
 }
 
-else if(tipoNetflix.value=="Cuenta"){
+else if(tipoNetflix.value=="Cuenta Completa"){
 
     precioNetflix.textContent="$49.900";
 
@@ -26,7 +26,8 @@ else if(tipoNetflix.value=="Cuenta"){
 
 else if(tipoNetflix.value=="Internacional"){
 
-    precioNetflix.textContent="$15.000";
+        precioNetflix.textContent="$15.000";
 
-}
+    }
+
 });

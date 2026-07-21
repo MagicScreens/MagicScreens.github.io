@@ -69,4 +69,26 @@ console.log(tipoDisney.value);
 
     }
 
+    // ================================
+// PRIME VIDEO
+// ================================
+
+const tipoPrime = document.getElementById("tipo-prime");
+
+const precioPrime = document.getElementById("precio-prime");
+
+tipoPrime.addEventListener("change", function(){
+
+    if(tipoPrime.value=="Pantalla"){
+
+        precioPrime.textContent="$6.500";
+
+    }
+
+    else if(tipoPrime.value=="Cuenta Completa"){
+
+        precioPrime.textContent="$13.900";
+
+    }
+
 });

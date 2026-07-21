@@ -20,13 +20,13 @@ if(tipoNetflix.value=="Pantalla"){
 
 else if(tipoNetflix.value=="Cuenta"){
 
-    precioNetflix.textContent="$44.900";
+    precioNetflix.textContent="$49.900";
 
 }
 
-else{
+else if(tipoNetflix.value=="Internacional"){
 
-    precioNetflix.textContent="$15.900";
+    precioNetflix.textContent="$15.000";
 
 }
 });

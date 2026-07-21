@@ -41,7 +41,7 @@ const tipoDisney = document.getElementById("tipo-disney");
 const precioDisney = document.getElementById("precio-disney");
 
 tipoDisney.addEventListener("change", function(){
-
+console.log(tipoDisney.value);
     if(tipoDisney.value=="Pantalla Estándar +"){
 
         precioDisney.textContent="$7.500";

@@ -9,24 +9,27 @@ console.log("Magic Screens cargado correctamente");
 // ================================
 
 const tipoNetflix = document.getElementById("tipo-netflix");
-
 const precioNetflix = document.getElementById("precio-netflix");
-tipoNetflix.addEventListener("change", function(){
-if(tipoNetflix.value=="Pantalla"){
 
-    precioNetflix.textContent="$13.000";
+tipoNetflix.addEventListener("change", function () {
 
-}
+    console.log(tipoNetflix.value);
 
-else if(tipoNetflix.value=="Cuenta Completa"){
+    if (tipoNetflix.value === "Pantalla") {
 
-   precioNetflix.textContent="$49.900";
+        precioNetflix.textContent = "$13.000";
 
-}
+    }
 
-else if(tipoNetflix.value=="Internacional"){
+    else if (tipoNetflix.value === "Cuenta Completa") {
 
-        precioNetflix.textContent="$15.000";
+        precioNetflix.textContent = "$49.900";
+
+    }
+
+    else if (tipoNetflix.value === "Internacional") {
+
+        precioNetflix.textContent = "$15.000";
 
     }
 

@@ -148,3 +148,71 @@ setTimeout(function(){
 },250);
     
 });
+
+// ================================
+// BOTONES WHATSAPP
+// ================================
+
+// Netflix
+document.getElementById("btn-netflix").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-netflix").value;
+
+    const mensaje = `Hola 👋 Quiero comprar Netflix (${tipo}).`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+});
+
+// Disney
+document.getElementById("btn-disney").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-disney").value;
+
+    const mensaje = `Hola 👋 Quiero comprar Disney+ (${tipo}).`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+});
+
+// Prime
+document.getElementById("btn-prime").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-prime").value;
+
+    const mensaje = `Hola 👋 Quiero comprar Prime Video (${tipo}).`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+});
+
+// HBO
+document.getElementById("btn-hbo").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-hbo").value;
+
+    const mensaje = `Hola 👋 Quiero comprar HBO Max (${tipo}).`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+});

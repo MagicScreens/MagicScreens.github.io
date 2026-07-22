@@ -630,6 +630,17 @@ cursor:pointer;
     letter-spacing:1px;
 
 }
+.precio-anterior{
+
+    color:#7F7F90;
+
+    text-decoration:line-through;
+
+    font-size:18px;
+
+    margin-bottom:-8px;
+
+}
 .precio.cambiar{
 
     transform:scale(1.12);

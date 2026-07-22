@@ -160,8 +160,15 @@ document.getElementById("btn-netflix").addEventListener("click", function(e){
 
     const tipo = document.getElementById("tipo-netflix").value;
 
-    const mensaje = `Hola 👋 Quiero comprar Netflix (${tipo}).`;
+   const mensaje =
+`¡Hola! 😊
 
+Estoy interesado en adquirir el servicio de Netflix.
+
+📺 Tipo seleccionado:
+${tipo}
+
+¿Podrían ayudarme con el proceso de compra? Muchas gracias.`;
     window.open(
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
         "_blank"
@@ -176,8 +183,15 @@ document.getElementById("btn-disney").addEventListener("click", function(e){
 
     const tipo = document.getElementById("tipo-disney").value;
 
-    const mensaje = `Hola 👋 Quiero comprar Disney+ (${tipo}).`;
+    const mensaje =
+`¡Hola! 😊
 
+Estoy interesado en adquirir Disney+.
+
+📺 Tipo seleccionado:
+${tipo}
+
+¿Podrían ayudarme con el proceso de compra? Muchas gracias.`;
     window.open(
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
         "_blank"
@@ -192,7 +206,15 @@ document.getElementById("btn-prime").addEventListener("click", function(e){
 
     const tipo = document.getElementById("tipo-prime").value;
 
-    const mensaje = `Hola 👋 Quiero comprar Prime Video (${tipo}).`;
+    const mensaje =
+`¡Hola! 😊
+
+Estoy interesado en adquirir Prime Video.
+
+📺 Tipo seleccionado:
+${tipo}
+
+¿Podrían ayudarme con el proceso de compra? Muchas gracias.`;
 
     window.open(
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
@@ -208,7 +230,15 @@ document.getElementById("btn-hbo").addEventListener("click", function(e){
 
     const tipo = document.getElementById("tipo-hbo").value;
 
-    const mensaje = `Hola 👋 Quiero comprar HBO Max (${tipo}).`;
+    const mensaje =
+`¡Hola! 😊
+
+Estoy interesado en adquirir HBO Max.
+
+📺 Tipo seleccionado:
+${tipo}
+
+¿Podrían ayudarme con el proceso de compra? Muchas gracias.`;
 
     window.open(
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),

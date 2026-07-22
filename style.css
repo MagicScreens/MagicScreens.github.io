@@ -378,7 +378,6 @@ header p{
     flex-wrap:wrap;
 
     gap:30px;
-
 }
 
 
@@ -455,8 +454,8 @@ justify-content:space-between;
     margin-bottom:18px;
 
     min-height:40px;
-
 }
+
 .card p{
 
     color:var(--texto-secundario);

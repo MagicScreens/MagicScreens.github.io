@@ -618,6 +618,15 @@ cursor:pointer;
     letter-spacing:1px;
 
 }
+.precio.cambiar{
+
+    transform:scale(1.12);
+
+    color:#FFFFFF;
+
+    transition:.25s;
+
+}
 .badge-card{
 
     display:inline-block;

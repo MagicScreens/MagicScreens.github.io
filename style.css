@@ -464,6 +464,35 @@ justify-content:space-between;
 }
 
 .circulo-logo{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    font-weight:bold;
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(123,47,247,.35);
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+/* Colores por plataforma */
+
 .logo-netflix{
 
     background:linear-gradient(135deg,#E50914,#B20710);

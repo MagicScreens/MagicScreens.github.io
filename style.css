@@ -848,6 +848,67 @@ cursor:pointer;
 
 /* Próximamente */
 
+/* =====================================================
+   PREGUNTAS FRECUENTES
+===================================================== */
+
+.faq{
+
+    padding:90px 20px;
+
+}
+
+.faq h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.faq-item{
+
+    background:var(--fondo-secundario);
+
+    border:1px solid #2B2B40;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin:20px auto;
+
+    max-width:850px;
+
+    transition:.3s;
+
+}
+
+.faq-item:hover{
+
+    border-color:var(--morado);
+
+    transform:translateY(-4px);
+
+}
+
+.faq-item h3{
+
+    color:white;
+
+    margin-bottom:12px;
+
+}
+
+.faq-item p{
+
+    color:var(--texto-secundario);
+
+    line-height:1.7;
+
+}
 
 /* =====================================================
    RESPONSIVE

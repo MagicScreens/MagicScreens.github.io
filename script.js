@@ -30,8 +30,15 @@ tipoNetflix.addEventListener("change", function () {
     else if (tipoNetflix.value === "Internacional") {
 
         precioNetflix.textContent = "$15.000";
-
  }
+ 
+    precioNetflix.classList.add("cambiar");
+
+setTimeout(function(){
+
+    precioNetflix.classList.remove("cambiar");
+
+},250);
     
 });
 
@@ -68,6 +75,14 @@ console.log(tipoDisney.value);
         precioDisney.textContent="$37.900";
 
         }
+    precioDisney.classList.add("cambiar");
+
+setTimeout(function(){
+
+    precioDisney.classList.remove("cambiar");
+
+},250);
+    
 });
 
     // ================================
@@ -92,6 +107,14 @@ tipoPrime.addEventListener("change", function(){
 
     }
 
+    precioPrime.classList.add("cambiar");
+
+setTimeout(function(){
+
+    precioPrime.classList.remove("cambiar");
+
+},250);
+    
 });
 
 // ================================
@@ -116,4 +139,12 @@ tipoHBO.addEventListener("change", function(){
 
     }
 
+    precioHBO.classList.add("cambiar");
+
+setTimeout(function(){
+
+    precioHBO.classList.remove("cambiar");
+
+},250);
+    
 });

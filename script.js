@@ -93,3 +93,27 @@ tipoPrime.addEventListener("change", function(){
     }
 
 });
+
+// ================================
+// HBO MAX
+// ================================
+
+const tipoHBO = document.getElementById("tipo-hbo");
+
+const precioHBO = document.getElementById("precio-hbo");
+
+tipoHBO.addEventListener("change", function(){
+
+    if(tipoHBO.value=="Pantalla"){
+
+        precioHBO.textContent="$7.500";
+
+    }
+
+    else if(tipoHBO.value=="Cuenta Completa"){
+
+        precioHBO.textContent="$13.900";
+
+    }
+
+});

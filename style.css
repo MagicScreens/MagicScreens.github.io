@@ -713,31 +713,73 @@ cursor:pointer;
 
 }
 
-.mini-plataforma{
+.mini-card{
+
+    width:180px;
 
     background:var(--fondo-secundario);
 
     border:1px solid #2B2B40;
 
-    border-radius:14px;
+    border-radius:18px;
 
-    padding:14px 24px;
+    padding:25px;
+
+    text-align:center;
 
     transition:.3s;
 
-    cursor:pointer;
-
-    font-weight:bold;
-
 }
 
-.mini-plataforma:hover{
+.mini-card:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-8px);
 
     border-color:var(--morado);
 
-    background:#222236;
+    box-shadow:0 15px 35px rgba(123,47,247,.25);
+
+}
+
+.mini-logo{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.mini-card h3{
+
+    font-size:20px;
+
+    margin-bottom:15px;
+
+}
+
+.mini-card p{
+
+    color:#9E9EAE;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:12px;
+
+}
+
+.mini-card span{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-size:28px;
+
+    color:var(--morado);
+
+    font-weight:bold;
 
 }
 

@@ -67,7 +67,8 @@ console.log(tipoDisney.value);
 
         precioDisney.textContent="$37.900";
 
-    }
+        }
+});
 
     // ================================
 // PRIME VIDEO

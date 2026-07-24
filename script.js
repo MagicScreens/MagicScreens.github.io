@@ -208,6 +208,38 @@ tipoApple.addEventListener("change", function(){
 });
 
 // ================================
+// PARAMOUNT+
+// ================================
+
+const tipoParamount = document.getElementById("tipo-paramount");
+
+const precioParamount = document.getElementById("precio-paramount");
+
+tipoParamount.addEventListener("change", function(){
+
+    if(tipoParamount.value=="Pantalla"){
+
+        precioParamount.textContent="$9.900";
+
+    }
+
+    else if(tipoParamount.value=="Cuenta Completa"){
+
+        precioParamount.textContent="$17.900";
+
+    }
+
+    precioParamount.classList.add("cambiar");
+
+    setTimeout(function(){
+
+        precioParamount.classList.remove("cambiar");
+
+    },250);
+
+});
+
+// ================================
 // BOTONES WHATSAPP
 // ================================
 
@@ -342,6 +374,30 @@ document.getElementById("btn-apple").addEventListener("click", function(e){
 `👋 ¡Hola Magic Screens!
 
 Estoy interesado en adquirir *Apple TV+*.
+
+📦 Tipo seleccionado:
+${tipo}
+
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+});
+
+// Paramount+
+document.getElementById("btn-paramount").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-paramount").value;
+
+    const mensaje =
+`👋 ¡Hola Magic Screens!
+
+Estoy interesado en adquirir *Paramount+*.
 
 📦 Tipo seleccionado:
 ${tipo}

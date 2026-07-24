@@ -150,6 +150,38 @@ setTimeout(function(){
 });
 
 // ================================
+// SPOTIFY
+// ================================
+
+const tipoSpotify = document.getElementById("tipo-spotify");
+
+const precioSpotify = document.getElementById("precio-spotify");
+
+tipoSpotify.addEventListener("change", function(){
+
+    if(tipoSpotify.value=="1 mes"){
+
+        precioSpotify.textContent="$9.900";
+
+    }
+
+    else if(tipoSpotify.value=="2 meses"){
+
+        precioSpotify.textContent="$15.900";
+
+    }
+
+    precioSpotify.classList.add("cambiar");
+
+    setTimeout(function(){
+
+        precioSpotify.classList.remove("cambiar");
+
+    },250);
+
+});
+
+// ================================
 // BOTONES WHATSAPP
 // ================================
 
@@ -244,5 +276,29 @@ ${tipo}
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
         "_blank"
     );
+});
+    
+// Spotify
+document.getElementById("btn-spotify").addEventListener("click", function(e){
 
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-spotify").value;
+
+    const mensaje =
+`🎵 ¡Hola Magic Screens! 👋
+
+Quiero comprar Spotify Premium.
+
+📦 Plan seleccionado:
+${tipo}
+
+¿Podrías ayudarme con el proceso de compra? 😊`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+});
 });

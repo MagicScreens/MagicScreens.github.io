@@ -390,6 +390,38 @@ tipoPicsart.addEventListener("change", function(){
 });
 
 // ================================
+// CAPCUT PRO
+// ================================
+
+const tipoCapcut = document.getElementById("tipo-capcut");
+
+const precioCapcut = document.getElementById("precio-capcut");
+
+tipoCapcut.addEventListener("change", function(){
+
+    if(tipoCapcut.value=="1 dispositivo"){
+
+        precioCapcut.textContent="$17.900";
+
+    }
+
+    else if(tipoCapcut.value=="Cuenta 3 dispositivos"){
+
+        precioCapcut.textContent="$32.900";
+
+    }
+
+    precioCapcut.classList.add("cambiar");
+
+    setTimeout(function(){
+
+        precioCapcut.classList.remove("cambiar");
+
+    },250);
+
+});
+
+// ================================
 // BOTONES WHATSAPP
 // ================================
 
@@ -691,6 +723,30 @@ document.getElementById("btn-picsart").addEventListener("click", function(e){
 `👋 ¡Hola Magic Screens!
 
 Estoy interesado en adquirir *PicsArt Gold*.
+
+📦 Tipo seleccionado:
+${tipo}
+
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+});
+
+// CapCut Pro
+document.getElementById("btn-capcut").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-capcut").value;
+
+    const mensaje =
+`👋 ¡Hola Magic Screens!
+
+Estoy interesado en adquirir *CapCut Pro*.
 
 📦 Tipo seleccionado:
 ${tipo}

@@ -564,6 +564,12 @@ justify-content:space-between;
 
 }
 
+.logo-chatgpt{
+
+    background:linear-gradient(135deg,#10A37F,#0F766E);
+
+}
+
     width:80px;
 
     height:80px;

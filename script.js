@@ -324,6 +324,28 @@ tipoCanva.addEventListener("change", function(){
 });
 
 // ================================
+// CHATGPT PLUS
+// ================================
+
+const tipoChatGPT = document.getElementById("tipo-chatgpt");
+
+const precioChatGPT = document.getElementById("precio-chatgpt");
+
+tipoChatGPT.addEventListener("change", function(){
+
+    precioChatGPT.textContent="$22.900";
+
+    precioChatGPT.classList.add("cambiar");
+
+    setTimeout(function(){
+
+        precioChatGPT.classList.remove("cambiar");
+
+    },250);
+
+});
+
+// ================================
 // BOTONES WHATSAPP
 // ================================
 
@@ -566,3 +588,26 @@ ${tipo}
 
 });
 
+// ChatGPT
+document.getElementById("btn-chatgpt").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-chatgpt").value;
+
+    const mensaje =
+`👋 ¡Hola Magic Screens!
+
+Estoy interesado en adquirir *ChatGPT Plus*.
+
+📦 Tipo seleccionado:
+${tipo}
+
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+});

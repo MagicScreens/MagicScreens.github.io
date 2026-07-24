@@ -302,6 +302,28 @@ tipoViki.addEventListener("change", function(){
 });
 
 // ================================
+// CANVA PRO
+// ================================
+
+const tipoCanva = document.getElementById("tipo-canva");
+
+const precioCanva = document.getElementById("precio-canva");
+
+tipoCanva.addEventListener("change", function(){
+
+    precioCanva.textContent="$6.500";
+
+    precioCanva.classList.add("cambiar");
+
+    setTimeout(function(){
+
+        precioCanva.classList.remove("cambiar");
+
+    },250);
+
+});
+
+// ================================
 // BOTONES WHATSAPP
 // ================================
 
@@ -519,3 +541,28 @@ ${tipo}
         "_blank"
     );
 });
+
+// Canva
+document.getElementById("btn-canva").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-canva").value;
+
+    const mensaje =
+`👋 ¡Hola Magic Screens!
+
+Estoy interesado en adquirir *Canva Pro*.
+
+📦 Tipo seleccionado:
+${tipo}
+
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+});
+

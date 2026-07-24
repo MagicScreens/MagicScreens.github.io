@@ -299,6 +299,6 @@ ${tipo}
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
         "_blank"
     );
-
 });
+
 });

@@ -734,7 +734,8 @@ cursor:pointer;
     text-align:center;
 
     transition:.3s;
-
+    text-decoration:none;
+    color:white;
 }
 
 .mini-card:hover{

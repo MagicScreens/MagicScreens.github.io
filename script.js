@@ -218,15 +218,16 @@ document.getElementById("btn-netflix").addEventListener("click", function(e){
 
     const tipo = document.getElementById("tipo-netflix").value;
 
-   const mensaje =
-`¡Hola! 😊
+    const mensaje =
+`👋 ¡Hola Magic Screens!
 
-Estoy interesado en adquirir el servicio de Netflix.
+Estoy interesado en adquirir *Netflix*.
 
-📺 Tipo seleccionado:
+📦 Tipo seleccionado:
 ${tipo}
 
-¿Podrían ayudarme con el proceso de compra? Muchas gracias.`;
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
+
     window.open(
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
         "_blank"
@@ -234,7 +235,7 @@ ${tipo}
 
 });
 
-// Disney
+// Disney+
 document.getElementById("btn-disney").addEventListener("click", function(e){
 
     e.preventDefault();
@@ -242,14 +243,15 @@ document.getElementById("btn-disney").addEventListener("click", function(e){
     const tipo = document.getElementById("tipo-disney").value;
 
     const mensaje =
-`¡Hola! 😊
+`👋 ¡Hola Magic Screens!
 
-Estoy interesado en adquirir Disney+.
+Estoy interesado en adquirir *Disney+*.
 
-📺 Tipo seleccionado:
+📦 Tipo seleccionado:
 ${tipo}
 
-¿Podrían ayudarme con el proceso de compra? Muchas gracias.`;
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
+
     window.open(
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
         "_blank"
@@ -257,7 +259,7 @@ ${tipo}
 
 });
 
-// Prime
+// Prime Video
 document.getElementById("btn-prime").addEventListener("click", function(e){
 
     e.preventDefault();
@@ -265,14 +267,14 @@ document.getElementById("btn-prime").addEventListener("click", function(e){
     const tipo = document.getElementById("tipo-prime").value;
 
     const mensaje =
-`¡Hola! 😊
+`👋 ¡Hola Magic Screens!
 
-Estoy interesado en adquirir Prime Video.
+Estoy interesado en adquirir *Prime Video*.
 
-📺 Tipo seleccionado:
+📦 Tipo seleccionado:
 ${tipo}
 
-¿Podrían ayudarme con el proceso de compra? Muchas gracias.`;
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
 
     window.open(
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
@@ -281,7 +283,7 @@ ${tipo}
 
 });
 
-// HBO
+// HBO Max
 document.getElementById("btn-hbo").addEventListener("click", function(e){
 
     e.preventDefault();
@@ -289,21 +291,22 @@ document.getElementById("btn-hbo").addEventListener("click", function(e){
     const tipo = document.getElementById("tipo-hbo").value;
 
     const mensaje =
-`¡Hola! 😊
+`👋 ¡Hola Magic Screens!
 
-Estoy interesado en adquirir HBO Max.
+Estoy interesado en adquirir *HBO Max*.
 
-📺 Tipo seleccionado:
+📦 Tipo seleccionado:
 ${tipo}
 
-¿Podrían ayudarme con el proceso de compra? Muchas gracias.`;
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
 
     window.open(
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
         "_blank"
     );
+
 });
-    
+
 // Spotify
 document.getElementById("btn-spotify").addEventListener("click", function(e){
 
@@ -312,23 +315,23 @@ document.getElementById("btn-spotify").addEventListener("click", function(e){
     const tipo = document.getElementById("tipo-spotify").value;
 
     const mensaje =
-`🎵 ¡Hola Magic Screens! 👋
+`👋 ¡Hola Magic Screens!
 
-Quiero comprar Spotify Premium.
+Estoy interesado en adquirir *Spotify Premium*.
 
-📦 Plan seleccionado:
+📦 Tipo seleccionado:
 ${tipo}
 
-¿Podrías ayudarme con el proceso de compra? 😊`;
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
 
     window.open(
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
         "_blank"
     );
+
 });
 
 // Apple TV+
-
 document.getElementById("btn-apple").addEventListener("click", function(e){
 
     e.preventDefault();
@@ -336,20 +339,18 @@ document.getElementById("btn-apple").addEventListener("click", function(e){
     const tipo = document.getElementById("tipo-apple").value;
 
     const mensaje =
-`🍎 ¡Hola Magic Screens! 👋
+`👋 ¡Hola Magic Screens!
 
-Estoy interesado en adquirir Apple TV+.
+Estoy interesado en adquirir *Apple TV+*.
 
 📦 Tipo seleccionado:
 ${tipo}
 
-¿Podrías ayudarme con el proceso de compra? 😊`;
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
 
     window.open(
-
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
-
         "_blank"
-
     );
+
 });

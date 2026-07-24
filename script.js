@@ -346,6 +346,28 @@ tipoChatGPT.addEventListener("change", function(){
 });
 
 // ================================
+// YOUTUBE PREMIUM
+// ================================
+
+const tipoYoutube = document.getElementById("tipo-youtube");
+
+const precioYoutube = document.getElementById("precio-youtube");
+
+tipoYoutube.addEventListener("change", function(){
+
+    precioYoutube.textContent="$11.900";
+
+    precioYoutube.classList.add("cambiar");
+
+    setTimeout(function(){
+
+        precioYoutube.classList.remove("cambiar");
+
+    },250);
+
+});
+
+// ================================
 // BOTONES WHATSAPP
 // ================================
 
@@ -599,6 +621,30 @@ document.getElementById("btn-chatgpt").addEventListener("click", function(e){
 `👋 ¡Hola Magic Screens!
 
 Estoy interesado en adquirir *ChatGPT Plus*.
+
+📦 Tipo seleccionado:
+${tipo}
+
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+});
+
+// YouTube Premium
+document.getElementById("btn-youtube").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-youtube").value;
+
+    const mensaje =
+`👋 ¡Hola Magic Screens!
+
+Estoy interesado en adquirir *YouTube Premium*.
 
 📦 Tipo seleccionado:
 ${tipo}

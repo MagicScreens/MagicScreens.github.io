@@ -225,7 +225,7 @@ tipoParamount.addEventListener("change", function(){
 
     else if(tipoParamount.value=="Cuenta Completa"){
 
-        precioParamount.textContent="$17.900";
+        precioParamount.textContent="$18.900";
 
     }
 
@@ -234,6 +234,38 @@ tipoParamount.addEventListener("change", function(){
     setTimeout(function(){
 
         precioParamount.classList.remove("cambiar");
+
+    },250);
+
+});
+
+// ================================
+// CRUNCHYROLL
+// ================================
+
+const tipoCrunchy = document.getElementById("tipo-crunchy");
+
+const precioCrunchy = document.getElementById("precio-crunchy");
+
+tipoCrunchy.addEventListener("change", function(){
+
+    if(tipoCrunchy.value=="Pantalla"){
+
+        precioCrunchy.textContent="$6.900";
+
+    }
+
+    else if(tipoCrunchy.value=="Cuenta Completa"){
+
+        precioCrunchy.textContent="$11.900";
+
+    }
+
+    precioCrunchy.classList.add("cambiar");
+
+    setTimeout(function(){
+
+        precioCrunchy.classList.remove("cambiar");
 
     },250);
 
@@ -398,6 +430,30 @@ document.getElementById("btn-paramount").addEventListener("click", function(e){
 `👋 ¡Hola Magic Screens!
 
 Estoy interesado en adquirir *Paramount+*.
+
+📦 Tipo seleccionado:
+${tipo}
+
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+});
+
+// Crunchyroll
+document.getElementById("btn-crunchy").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-crunchy").value;
+
+    const mensaje =
+`👋 ¡Hola Magic Screens!
+
+Estoy interesado en adquirir *Crunchyroll*.
 
 📦 Tipo seleccionado:
 ${tipo}

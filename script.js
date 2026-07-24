@@ -182,6 +182,32 @@ tipoSpotify.addEventListener("change", function(){
 });
 
 // ================================
+// APPLE TV+
+// ================================
+
+const tipoApple = document.getElementById("tipo-apple");
+
+const precioApple = document.getElementById("precio-apple");
+
+tipoApple.addEventListener("change", function(){
+
+    if(tipoApple.value=="Pantalla"){
+
+        precioApple.textContent="$7.500";
+
+    }
+
+    precioApple.classList.add("cambiar");
+
+    setTimeout(function(){
+
+        precioApple.classList.remove("cambiar");
+
+    },250);
+
+});
+
+// ================================
 // BOTONES WHATSAPP
 // ================================
 
@@ -298,5 +324,32 @@ ${tipo}
     window.open(
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
         "_blank"
+    );
+});
+
+// Apple TV+
+
+document.getElementById("btn-apple").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-apple").value;
+
+    const mensaje =
+`🍎 ¡Hola Magic Screens! 👋
+
+Estoy interesado en adquirir Apple TV+.
+
+📦 Tipo seleccionado:
+${tipo}
+
+¿Podrías ayudarme con el proceso de compra? 😊`;
+
+    window.open(
+
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+
+        "_blank"
+
     );
 });

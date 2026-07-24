@@ -422,6 +422,28 @@ tipoCapcut.addEventListener("change", function(){
 });
 
 // ================================
+// XBOX GAME PASS
+// ================================
+
+const tipoXbox = document.getElementById("tipo-xbox");
+
+const precioXbox = document.getElementById("precio-xbox");
+
+tipoXbox.addEventListener("change", function(){
+
+    precioXbox.textContent="$43.000";
+
+    precioXbox.classList.add("cambiar");
+
+    setTimeout(function(){
+
+        precioXbox.classList.remove("cambiar");
+
+    },250);
+
+});
+
+// ================================
 // BOTONES WHATSAPP
 // ================================
 
@@ -747,6 +769,30 @@ document.getElementById("btn-capcut").addEventListener("click", function(e){
 `👋 ¡Hola Magic Screens!
 
 Estoy interesado en adquirir *CapCut Pro*.
+
+📦 Tipo seleccionado:
+${tipo}
+
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+});
+
+// Xbox Game Pass
+document.getElementById("btn-xbox").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-xbox").value;
+
+    const mensaje =
+`👋 ¡Hola Magic Screens!
+
+Estoy interesado en adquirir *Xbox Game Pass*.
 
 📦 Tipo seleccionado:
 ${tipo}

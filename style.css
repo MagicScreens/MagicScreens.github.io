@@ -546,6 +546,12 @@ justify-content:space-between;
 
 }
 
+.logo-crunchy{
+
+    background:linear-gradient(135deg,#F47521,#FF8C42);
+
+}
+
     width:80px;
 
     height:80px;

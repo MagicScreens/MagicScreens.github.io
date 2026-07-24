@@ -272,6 +272,38 @@ tipoCrunchy.addEventListener("change", function(){
 });
 
 // ================================
+// VIKI
+// ================================
+
+const tipoViki = document.getElementById("tipo-viki");
+
+const precioViki = document.getElementById("precio-viki");
+
+tipoViki.addEventListener("change", function(){
+
+    if(tipoViki.value=="Pantalla"){
+
+        precioViki.textContent="$6.000";
+
+    }
+
+    else if(tipoViki.value=="Cuenta"){
+
+        precioViki.textContent="$10.000";
+
+    }
+
+    precioViki.classList.add("cambiar");
+
+    setTimeout(function(){
+
+        precioViki.classList.remove("cambiar");
+
+    },250);
+
+});
+
+// ================================
 // BOTONES WHATSAPP
 // ================================
 
@@ -454,6 +486,30 @@ document.getElementById("btn-crunchy").addEventListener("click", function(e){
 `👋 ¡Hola Magic Screens!
 
 Estoy interesado en adquirir *Crunchyroll*.
+
+📦 Tipo seleccionado:
+${tipo}
+
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+    
+});
+
+// Viki
+document.getElementById("btn-viki").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-viki").value;
+
+    const mensaje =
+`👋 ¡Hola Magic Screens!
+
+Estoy interesado en adquirir *Viki*.
 
 📦 Tipo seleccionado:
 ${tipo}

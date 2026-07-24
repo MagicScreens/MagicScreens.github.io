@@ -368,6 +368,28 @@ tipoYoutube.addEventListener("change", function(){
 });
 
 // ================================
+// PICSART
+// ================================
+
+const tipoPicsart = document.getElementById("tipo-picsart");
+
+const precioPicsart = document.getElementById("precio-picsart");
+
+tipoPicsart.addEventListener("change", function(){
+
+    precioPicsart.textContent="$8.900";
+
+    precioPicsart.classList.add("cambiar");
+
+    setTimeout(function(){
+
+        precioPicsart.classList.remove("cambiar");
+
+    },250);
+
+});
+
+// ================================
 // BOTONES WHATSAPP
 // ================================
 
@@ -645,6 +667,30 @@ document.getElementById("btn-youtube").addEventListener("click", function(e){
 `👋 ¡Hola Magic Screens!
 
 Estoy interesado en adquirir *YouTube Premium*.
+
+📦 Tipo seleccionado:
+${tipo}
+
+¿Podrían ayudarme con el proceso de compra? ¡Muchas gracias! 😊`;
+
+    window.open(
+        "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+});
+
+// PicsArt
+document.getElementById("btn-picsart").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const tipo = document.getElementById("tipo-picsart").value;
+
+    const mensaje =
+`👋 ¡Hola Magic Screens!
+
+Estoy interesado en adquirir *PicsArt Gold*.
 
 📦 Tipo seleccionado:
 ${tipo}

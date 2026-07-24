@@ -284,13 +284,11 @@ tipoViki.addEventListener("change", function(){
     if(tipoViki.value=="Pantalla"){
 
         precioViki.textContent="$6.000";
-
     }
 
     else if(tipoViki.value=="Cuenta"){
 
         precioViki.textContent="$10.000";
-
     }
 
     precioViki.classList.add("cambiar");
@@ -520,5 +518,4 @@ ${tipo}
         "https://wa.me/573107077024?text=" + encodeURIComponent(mensaje),
         "_blank"
     );
-
 });
